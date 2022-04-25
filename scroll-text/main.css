@@ -2,12 +2,22 @@ body {
   background-color: #595959;
 }
 
+.dummy {
+  font-size: 32px;
+  height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .main {
   opacity: 0;
   transition: opacity 225ms ease-in-out;
 }
 
 .main > img {
+  height: 100%;
+  height: 80vh;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -58,12 +68,4 @@ body {
 #text p {
   font-size: 32px;
   color: #fff;
-}
-
-.dummy {
-  font-size: 32px;
-  height: calc(100vh);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
 }

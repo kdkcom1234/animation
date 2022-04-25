@@ -9,7 +9,7 @@
     const subHeight = height / 3;
 
     console.log(yOffset, subHeight);
-    if (yOffset >= -subHeight / 2 && yOffset < height) {
+    if (yOffset >= 0 && yOffset < height) {
       main.style.opacity = 0;
       section.style.opacity = 1;
     } else {
