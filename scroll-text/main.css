@@ -1,10 +1,27 @@
-#sticky-content {
+body {
+  background-color: #595959;
+}
+
+.main {
+  opacity: 0;
+  transition: opacity 225ms ease-in-out;
+}
+
+.main > img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sticky {
   height: calc(100vh * 3);
   width: 1200px;
   margin: 0 auto;
+  opacity: 0;
+  transition: opacity 225ms ease-in-out;
 }
 
-#sticky-content > div {
+.sticky > div {
   width: 50%;
   display: flex;
   align-items: center;
@@ -14,7 +31,7 @@
   width: 600px;
 }
 
-#sticky-content > #text {
+#text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,14 +40,24 @@
   position: relative;
 }
 
-#sticky-content > #text > p {
-  font-size: 32px;
+#text > div {
   font-weight: bold;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   width: 30vw;
   opacity: 0;
+  text-align: center;
+}
+#text h3 {
+  font-size: 48px;
+  color: #ffb800;
+  margin-bottom: 32px;
+}
+
+#text p {
+  font-size: 32px;
+  color: #fff;
 }
 
 .dummy {

@@ -1,5 +1,6 @@
 (function () {
-  const section = document.querySelector("#sticky-content");
+  const section = document.querySelector(".sticky");
+  const main = document.querySelector(".main");
   const context = document.querySelector("canvas").getContext("2d");
 
   const setAnimation = () => {
@@ -7,15 +8,13 @@
     const height = section.getBoundingClientRect().height;
     const subHeight = height / 3;
 
-    // console.log(yOffset, subHeight);
-    if (yOffset >= 0 && yOffset < height) {
-      if (section.style.visibility !== "visible") {
-        section.style.visibility = "visible";
-      }
+    console.log(yOffset, subHeight);
+    if (yOffset >= -subHeight / 2 && yOffset < height) {
+      main.style.opacity = 0;
+      section.style.opacity = 1;
     } else {
-      if (section.style.visibility !== "hidden") {
-        section.style.visibility = "hidden";
-      }
+      main.style.opacity = 1;
+      section.style.opacity = 0;
     }
 
     for (let index of [0, 1, 2]) {
@@ -30,7 +29,7 @@
 
         // 텍스트 효과
         const elem = document.querySelector(
-          `#text > p:nth-child(${index + 1})`
+          `#text > div:nth-child(${index + 1})`
         );
 
         const ratio = (yOffset - subHeight * index) / subHeight;
@@ -41,7 +40,7 @@
 
         // 다른 텍스트는 숨기기
         const hiddenElems = document.querySelectorAll(
-          `#text > p:not(:nth-child(${index + 1}))`
+          `#text > div:not(:nth-child(${index + 1}))`
         );
         hiddenElems.forEach((hiddenElem) => {
           hiddenElem.style.opacity = 0;
@@ -52,4 +51,5 @@
 
   window.addEventListener("load", setAnimation);
   window.addEventListener("scroll", setAnimation);
+  window.addEventListener("resize", setAnimation);
 })();
