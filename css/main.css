@@ -1,0 +1,42 @@
+#sticky-content {
+  height: calc(100vh * 3);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#sticky-content > div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  height: 100vh;
+  width: 600px;
+}
+
+#sticky-content > #text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  position: relative;
+}
+
+#sticky-content > #text > p {
+  font-size: 32px;
+  font-weight: bold;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30vw;
+  opacity: 0;
+}
+
+.dummy {
+  font-size: 32px;
+  height: calc(100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
