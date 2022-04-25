@@ -61,9 +61,9 @@ body {
 
 @keyframes move-planet {
   from {
-    transform: translate3d(1px, 1px, 0) rotate(116deg);
+    transform: translate3d(1px, 1px, 0);
   }
   to {
-    transform: translate3d(-0.5px, -0.5px, 0) rotate(116deg);
+    transform: translate3d(-0.5px, -0.5px, 0);
   }
 }
