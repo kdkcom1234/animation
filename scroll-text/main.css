@@ -37,6 +37,6 @@
   font-size: 32px;
   height: calc(100vh);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
