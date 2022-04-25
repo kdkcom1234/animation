@@ -42,11 +42,10 @@ body {
 
 @keyframes burn {
   from {
-    transform: skew(2deg, 3deg) translate3d(1px, 1px, 0) scale3d(1.01, 1.02, 1);
+    transform: skew(3deg, 3deg) translate3d(1px, 1px, 0);
   }
   to {
-    transform: skew(-2deg, -3deg) translate3d(-1px, -1px, 0)
-      scale3d(0.99, 0.98, 1);
+    transform: skew(-3deg, -3deg) translate3d(-1px, -1px, 0);
   }
 }
 
