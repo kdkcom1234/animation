@@ -20,6 +20,10 @@
           path.style.strokeDashoffset = length;
           path.style.stroke = color;
           path.style.animation = `draw ${time}s linear forwards`;
+          // path.addEventListener("animationend", () => {
+          //   path.style.fill = color;
+          //   path.style.strokeWidth = 0;
+          // });
         });
       }
 
