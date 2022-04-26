@@ -1,13 +1,10 @@
 (function () {
   const container = document.querySelector('.container.spaceship');
+  const text = document.querySelector('#text-p2e');
 
   function play(entries) {
-    // console.log(entries);
-
     entries[0].isIntersecting &&
       requestAnimationFrame(() => {
-        console.log('animation spaceship');
-
         !document.querySelector('#spaceship') &&
           fetch('svg/spaceship.svg')
             .then((res) => res.text())
@@ -35,7 +32,8 @@
               drawLines(planet, '#FFB800', 4.5);
             });
 
-        document.querySelector('#text-p2e').style.animation = 'text-fade-in 1s ease-in-out forwards';
+        text.style.animation = 'text-fade-in 1s ease-in-out forwards';
+        text.style.animationPlayState = 'running';
       });
   }
 

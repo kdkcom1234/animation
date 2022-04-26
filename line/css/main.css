@@ -22,8 +22,8 @@ body {
 
 .container {
   position: relative;
-  width: 600px;
-  height: 550px;
+  width: 500px;
+  height: 500px;
 }
 
 @keyframes draw {

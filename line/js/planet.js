@@ -3,6 +3,7 @@
   const canvas = document.querySelector('#pome-cyan');
   const context = document.querySelector('#pome-cyan').getContext('2d');
   const img = new Image();
+  const text = document.querySelector('#text-pmr');
 
   function createKeyframes() {
     let frames = '';
@@ -67,12 +68,8 @@
   }
 
   function play(entries) {
-    // console.log(entries);
-
     entries[0].isIntersecting &&
       requestAnimationFrame(() => {
-        console.log('animation planet');
-
         !document.querySelector('#planet-pmr') &&
           fetch('svg/planet-pmr.svg')
             .then((res) => res.text())
@@ -99,7 +96,7 @@
           };
         }
 
-        document.querySelector('#text-pmr').style.animation = 'text-fade-in 1s ease-in-out forwards';
+        text.style.animation = 'text-fade-in 1s ease-in-out forwards';
       });
   }
 
