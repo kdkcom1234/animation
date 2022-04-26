@@ -31,7 +31,7 @@ body {
   height: 110px;
   left: 320px;
   top: 10px;
-  animation: move-planet 1s ease-in-out alternate infinite;
+  animation: float 1s ease-in-out alternate infinite;
 }
 
 @keyframes draw {
@@ -58,7 +58,7 @@ body {
   }
 }
 
-@keyframes move-planet {
+@keyframes float {
   from {
     transform: translate3d(1px, 1px, 0);
   }

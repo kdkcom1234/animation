@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <canvas id="pome-cyan" width="284" height="296"></canvas>
+      <div id="band"></div>
+    </div>
+    <script>
+      (function () {
+        const container = document.querySelector('#container');
+        const canvas = document.querySelector('#pome-cyan');
+        const context = document.querySelector('#pome-cyan').getContext('2d');
+
+        function drawLines(svg, color, time) {
+          svg.querySelectorAll('path').forEach((path) => {
+            const length = path.getTotalLength();
+            path.style.fill = 'none';
+            path.style.strokeDasharray = length;
+            path.style.strokeDashoffset = length;
+            path.style.stroke = color;
+            path.style.animation = `draw ${time}s linear forwards`;
+          });
+        }
+
+        function addAnimation(body) {
+          const style = `<style>${body}</style>`;
+          document.head.insertAdjacentHTML('beforeend', style);
+        }
+
+        function setKeyframes() {
+          let frames = '';
+          const framesCount = 360;
+          for (let i = 0; i < framesCount; i++) {
+            const quarter = Math.floor(framesCount / 4);
+            const quaterNum = Math.floor(i / quarter);
+            const frameName = ((i / framesCount) * 100).toFixed(2);
+
+            const cur = (1 * ((quarter - (i % quarter)) / quarter)).toFixed(2);
+            const next = (1 * ((i % quarter) / quarter)).toFixed(2);
+
+            switch (quaterNum) {
+              case 0:
+                frames += `${frameName}% {
+                border-top: 5px solid rgba(0, 255, 255, ${cur});
+                border-left: 5px solid rgba(0, 255, 255, ${next});
+                border-bottom: 5px solid rgba(0, 255, 255, 0);
+                border-right: 5px solid rgba(0, 255, 255, 0);
+              } `;
+                break;
+              case 1:
+                frames += `${frameName}% {
+                border-top: 5px solid rgba(0, 255, 255, 0);
+                border-left: 5px solid rgba(0, 255, 255, ${cur});
+                border-bottom: 5px solid rgba(0, 255, 255, ${next});
+                border-right: 5px solid rgba(0, 255, 255, 0);
+              } `;
+                break;
+              case 2:
+                frames += `${frameName}% {
+                border-top: 5px solid rgba(0, 255, 255, 0);
+                border-left: 5px solid rgba(0, 255, 255, 0);
+                border-bottom: 5px solid rgba(0, 255, 255, ${cur});
+                border-right: 5px solid rgba(0, 255, 255, ${next});               
+              } `;
+                break;
+              case 3:
+                frames += `${frameName}% {
+                border-top: 5px solid rgba(0, 255, 255, ${next});   
+                border-left: 5px solid rgba(0, 255, 255, 0);   
+                border-bottom: 5px solid rgba(0, 255, 255, 0);
+                border-right: 5px solid rgba(0, 255, 255, ${cur});
+              } `;
+                break;
+            }
+          }
+
+          frames += `100% {
+          border-top: 5px solid rgba(0, 255, 255, 1);
+          border-left: 5px solid rgba(0, 255, 255, 0);    
+          border-bottom: 5px solid rgba(0, 255, 255, 0);
+          border-right: 5px solid rgba(0, 255, 255, 0);           
+        }`;
+
+          const keyframes = `@keyframes spin {
+          ${frames}
+        }`;
+
+          addAnimation(keyframes);
+        }
+
+        fetch('planet-pmr.svg')
+          .then((res) => res.text())
+          .then((svg) => {
+            container.insertAdjacentHTML('afterbegin', svg);
+            const pmr = document.querySelector('#planet-pmr');
+            drawLines(pmr, '#FFB800', 1.5);
+          });
+
+        fetch('planet-small.svg')
+          .then((res) => res.text())
+          .then((svg) => {
+            container.insertAdjacentHTML('afterbegin', svg);
+            const small = document.querySelector('#planet-small');
+            drawLines(small, '#FFB800', 4.5);
+          });
+
+        const img = new Image();
+        img.src = 'pome-cyan.png';
+        img.onload = () => {
+          context.drawImage(img, 0, 0, 284, 296);
+          canvas.style.opacity = 1;
+        };
+
+        setTimeout(setKeyframes, 1800);
+      })();
+    </script>
+  </body>
+</html>
