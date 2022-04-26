@@ -1,10 +1,5 @@
-body {
-  background-color: #595959;
-}
-#container {
-  position: relative;
-  width: 600px;
-  height: 550px;
+#text-pmr {
+  opacity: 0;
 }
 
 #planet-pmr {
@@ -29,7 +24,6 @@ body {
   top: 120px;
   opacity: 0;
   transition: opacity 3s ease-in-out;
-  /* animation: float 3s ease-in-out alternate infinite; */
 }
 
 #band {
@@ -42,18 +36,3 @@ body {
   transform: skewX(-29deg) skewY(-17deg) scale(0.8);
   animation: spin 3s linear forwards infinite;
 }
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-/* @keyframes float {
-  from {
-    transform: translate(2px);
-  }
-  to {
-    transform: translateY(-2px);
-  }
-} */

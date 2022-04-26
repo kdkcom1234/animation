@@ -1,0 +1,47 @@
+#text-p2e {
+  opacity: 0;
+}
+
+#spaceship {
+  position: absolute;
+  width: 386px;
+  height: 415px;
+  left: 0;
+  top: 0;
+  animation: move 1.5s ease-in-out alternate infinite;
+}
+
+#fire {
+  position: absolute;
+  width: 120px;
+  height: 137px;
+  left: 230px;
+  top: 363px;
+  animation: burn 1.5s ease-in-out alternate infinite;
+}
+
+#planet {
+  position: absolute;
+  width: 99px;
+  height: 110px;
+  left: 320px;
+  top: 10px;
+}
+
+@keyframes burn {
+  from {
+    transform: skew(-2deg, -2deg) translate3d(-1px, -1px, 0);
+  }
+  to {
+    transform: skew(2deg, 2deg) translate3d(1px, 1px, 0);
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translate3d(1px, 1px, 0);
+  }
+  to {
+    transform: translate3d(-3px, -3px, 0);
+  }
+}
