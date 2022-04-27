@@ -1,5 +1,5 @@
 (function () {
-  const container = document.querySelector('.container.planet');
+  const container = document.querySelector('.features-container.planet');
   const canvas = document.querySelector('#pome-cyan');
   const context = document.querySelector('#pome-cyan').getContext('2d');
   const img = new Image();

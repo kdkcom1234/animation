@@ -1,5 +1,5 @@
 (function () {
-  const container = document.querySelector('.container.spaceship');
+  const container = document.querySelector('.features-container.spaceship');
   const text = document.querySelector('#text-p2e');
 
   function play(entries) {
