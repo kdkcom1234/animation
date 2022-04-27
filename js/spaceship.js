@@ -11,7 +11,7 @@
             .then((svg) => {
               container.insertAdjacentHTML('afterbegin', svg);
               const spaceship = document.querySelector('#spaceship');
-              drawLines(spaceship, '#FFB800', 1.5);
+              drawLines(spaceship, '#FFB800', 1);
             });
 
         !document.querySelector('#fire') &&
@@ -20,7 +20,7 @@
             .then((svg) => {
               container.insertAdjacentHTML('afterbegin', svg);
               const fire = document.querySelector('#fire');
-              drawLines(fire, '#FF3D00', 3);
+              drawLines(fire, '#FF3D00', 1);
             });
 
         !document.querySelector('#planet') &&
@@ -29,7 +29,7 @@
             .then((svg) => {
               container.insertAdjacentHTML('afterbegin', svg);
               const planet = document.querySelector('#planet');
-              drawLines(planet, '#FFB800', 4.5);
+              drawLines(planet, '#FFB800', 1);
             });
 
         text.style.animation = 'text-fade-in 1s ease-in-out forwards';

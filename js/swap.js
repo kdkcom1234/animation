@@ -1,15 +1,15 @@
 (function () {
   const section = document.querySelector('.sticky');
   const main = document.querySelector('.swap-main');
-  const context = document.querySelector('canvas').getContext('2d');
+  const context = document.querySelector('.phone > canvas').getContext('2d');
 
   const setAnimation = () => {
-    const mainHeight = main.getBoundingClientRect().height;
-    const yOffset = window.scrollY - main.getBoundingClientRect().height;
+    // console.log(main.offsetTop);
+    const yOffset = window.scrollY - (main.offsetTop + main.getBoundingClientRect().height);
     const sectionHeight = section.getBoundingClientRect().height;
     const subHeight = sectionHeight / 3;
 
-    // console.log(yOffset);
+    console.log(yOffset, subHeight);
     if (yOffset >= 0 && yOffset < sectionHeight) {
       main.style.opacity = 0;
       section.style.opacity = 1;
