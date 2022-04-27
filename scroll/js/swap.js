@@ -4,12 +4,13 @@
   const context = document.querySelector('canvas').getContext('2d');
 
   const setAnimation = () => {
-    const yOffset = window.scrollY - section.getBoundingClientRect().top;
-    const height = section.getBoundingClientRect().height;
-    const subHeight = height / 3;
+    const mainHeight = main.getBoundingClientRect().height;
+    const yOffset = window.scrollY - main.getBoundingClientRect().height;
+    const sectionHeight = section.getBoundingClientRect().height;
+    const subHeight = sectionHeight / 3;
 
-    // console.log(yOffset, subHeight);
-    if (yOffset >= 0 && yOffset < height) {
+    // console.log(yOffset);
+    if (yOffset >= 0 && yOffset < sectionHeight) {
       main.style.opacity = 0;
       section.style.opacity = 1;
     } else {

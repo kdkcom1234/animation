@@ -1,0 +1,234 @@
+.content-roadmap {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  text-align: justify;
+  background-color: #868686;
+  height: 1600px;
+}
+
+.content-roadmap .mobile-timeline {
+  display: none;
+}
+
+.content-roadmap .roadmap {
+  max-width: 1600px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.content-roadmap .roadmap header {
+  color: #ffbb00;
+  font-size: 40px;
+  font-weight: 900;
+  align-items: center;
+  min-width: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content-roadmap .roadmap aside {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 750px;
+}
+
+.content-roadmap .timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.content-roadmap .timeline .right-side {
+  position: absolute;
+  top: calc(8%);
+  right: calc(18% + 3px);
+}
+
+.content-roadmap .timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #ffb800;
+  top: 0;
+  bottom: calc(0% - 10px);
+  left: 50%;
+  margin-left: -1px;
+}
+
+.content-roadmap .container {
+  overflow: visible;
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+
+.content-roadmap .container.left {
+  left: 0;
+}
+
+.content-roadmap .container.right {
+  left: 73%;
+}
+
+.content-roadmap .container::after {
+  content: '';
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  top: calc(50% - 15px);
+  right: calc(-100% + 33px);
+  background: #ffb800;
+  border: 2px solid #ffb800;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.content-roadmap .container.right::after {
+  left: calc(-100% + 30px);
+}
+
+.content-roadmap .container::before {
+  content: '';
+  position: absolute;
+  width: 290px;
+  height: 0px;
+  top: calc(50% + 1px);
+  right: calc(-100% + 50px);
+  border: 0.1px dashed #ffb800;
+  z-index: 0;
+}
+
+.content-roadmap .container.right::before {
+  left: calc(-100% + 50px);
+}
+
+.content-roadmap .container .content {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 3px solid #ffb800;
+  box-sizing: border-box;
+  border-color: #ffb800;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 500px;
+}
+
+.content-roadmap .container.right .content {
+  border-radius: 500px;
+}
+
+.content-roadmap .container .content a {
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.content-roadmap .container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.content-roadmap .container.image {
+  width: 300px;
+  height: 300px;
+}
+
+.content-roadmap .container.image a {
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 800;
+  width: 310px;
+  color: #ffffff;
+  position: absolute;
+  -webkit-transform: translate(-13%, 50%);
+  -ms-transform: translate(-13%, 50%);
+  transform: translate(-13%, 50%);
+}
+
+.content-roadmap .container.right.image a {
+  -webkit-transform: translate(-4%, 50%);
+  -ms-transform: translate(-4%, 50%);
+  transform: translate(-4%, 50%);
+}
+
+.content-roadmap .container img {
+  width: 450px;
+  -webkit-transform: translate(-25%, 10%);
+  -ms-transform: translate(-25%, 10%);
+  transform: translate(-25%, 10%);
+  z-index: 10000;
+}
+
+.content-roadmap .container.image::before {
+  top: calc(48%);
+  right: calc(-60%);
+}
+
+.content-roadmap .container.image::after {
+  top: calc(43%);
+  right: calc(-63% + 1px);
+}
+
+.content-roadmap .container.right.image::before {
+  top: calc(55%);
+  left: calc(-100% + 90px);
+}
+
+.content-roadmap .container.right.image::after {
+  top: calc(50%);
+  left: calc(-100% + 80px);
+}
+
+.arrow {
+  position: relative;
+}
+
+.arrow::after {
+  position: absolute;
+  top: 6px;
+  left: 561px;
+  content: '';
+  width: 15px; /* 사이즈 */
+  height: 15px; /* 사이즈 */
+  border-top: 4px solid #ffb800; /* 선 두께 */
+  border-right: 4px solid #ffb800; /* 선 두께 */
+  transform: rotate(135deg); /* 각도 */
+}
+
+/* ---- added rules for animation --- */
+.timeline .container {
+  opacity: 0;
+  /* transition: all 1s ease-in-out; */
+  transition: all 750ms cubic-bezier(0.42, 0, 0.79, 1.23);
+}
+
+.timeline .container.left {
+  transform: translateX(-250px);
+}
+
+.timeline .container.right {
+  transform: translateX(250px);
+}
+
+/* .content-roadmap {
+} */

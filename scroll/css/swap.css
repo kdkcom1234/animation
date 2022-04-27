@@ -3,7 +3,7 @@ body {
 }
 
 .swap-main {
-  height: 50vh;
+  height: 20vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -23,6 +23,7 @@ body {
   height: calc(100vh * 3);
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 50vh;
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
@@ -92,12 +93,4 @@ body {
   position: absolute;
   top: calc(50% - 370px);
   left: 0;
-}
-
-.dummy {
-  font-size: 32px;
-  height: 50vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
 }
