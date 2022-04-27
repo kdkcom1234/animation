@@ -69,3 +69,22 @@ body {
   font-size: 32px;
   color: #fff;
 }
+
+.phone {
+  position: relative;
+}
+
+.phone img {
+  position: absolute;
+  top: 73px;
+  left: -27px;
+}
+
+.phone .notch {
+  position: absolute;
+  top: 89px;
+  left: 0;
+  background-color: #13131b;
+  height: 37px;
+  width: 370px;
+}
