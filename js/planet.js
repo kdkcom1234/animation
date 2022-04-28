@@ -76,7 +76,7 @@
             .then((svg) => {
               container.insertAdjacentHTML('afterbegin', svg);
               const pmr = document.querySelector('#planet-pmr');
-              drawLines(pmr, '#FFB800', 1);
+              drawLines(pmr, 1);
             });
 
         !document.querySelector('#planet-small') &&
@@ -85,7 +85,7 @@
             .then((svg) => {
               container.insertAdjacentHTML('afterbegin', svg);
               const small = document.querySelector('#planet-small');
-              drawLines(small, '#FFB800', 1);
+              drawLines(small, 1);
             });
 
         if (!img.src) {
