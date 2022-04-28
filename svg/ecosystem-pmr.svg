@@ -1,0 +1,10 @@
+<svg id="ecosystem-pmr" width="182" height="188" viewBox="0 0 182 188" fill="none" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect x="1" width="180" height="188" fill="url(#pattern0)" />
+  <path
+    d="M90.5 166C132.197 166 166 132.197 166 90.5C166 48.8025 132.197 15 90.5 15C48.8025 15 15 48.8025 15 90.5C15 132.197 48.8025 166 90.5 166Z"
+    stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+  <path
+    d="M91 181C140.706 181 181 140.706 181 91C181 41.2944 140.706 1 91 1C41.2944 1 1 41.2944 1 91C1 140.706 41.2944 181 91 181Z"
+    stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+</svg>

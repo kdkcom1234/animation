@@ -1,0 +1,22 @@
+<svg id="ecosystem-dia" width="182" height="158" viewBox="0 0 182 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M46.1263 1.39187L0.999939 78.3895L45.8152 156.608L135.524 157.218L181 78.9869L135.848 0.781494L46.1263 1.39187Z"
+    stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+  <path
+    d="M66.1293 35.9882L41.1224 78.6622L65.9607 121.999L115.676 122.336L140.878 78.9998L115.845 35.6505L66.1293 35.9882Z"
+    stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M135.848 0.781494L115.845 35.6506" stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M181 78.9869L140.878 78.9999" stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M135.524 157.218L115.676 122.336" stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M45.8152 156.608L65.9607 121.999" stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M0.999939 78.3895L41.1224 78.6623" stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M67.8534 51.0917L90.9416 91.3112" stroke="#FA00FF" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M76.8761 51.3904H105.772" stroke="#FA00FF" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M81.1541 59.2083H116.545L122.832 71.2079" stroke="#FA00FF" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M92.1602 66.6626L69.085 106.895" stroke="#FA00FF" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M81.1541 97.7396H99.6273" stroke="#FA00FF" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M76.8761 106.584H101.909L113.874 86.0647" stroke="#FA00FF" stroke-width="1.5" stroke-miterlimit="10" />
+  <path d="M111.307 66.6626L122.832 86.7399L114.924 100.22" stroke="#FA00FF" stroke-width="1.5"
+    stroke-miterlimit="10" />
+  <path d="M46.1263 1.39185L66.1292 35.9882" stroke="#FFB800" stroke-width="1.5" stroke-miterlimit="10" />
+</svg>

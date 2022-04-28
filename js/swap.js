@@ -9,7 +9,7 @@
     const sectionHeight = section.getBoundingClientRect().height;
     const subHeight = sectionHeight / 3;
 
-    console.log(yOffset, subHeight);
+    // console.log(yOffset, subHeight);
     if (yOffset >= 0 && yOffset < sectionHeight) {
       main.style.opacity = 0;
       section.style.opacity = 1;

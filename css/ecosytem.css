@@ -1,0 +1,45 @@
+#text-ecosystem {
+  opacity: 0;
+}
+
+#ecosystem-pmr {
+  position: absolute;
+  width: 170.5px;
+  height: 170.5px;
+  left: 190px;
+  top: 50px;
+}
+
+#ecosystem-gp {
+  position: absolute;
+  width: 170.5px;
+  height: 170.5px;
+  left: 20px;
+  top: 280px;
+}
+
+#gp-cyan {
+  position: absolute;
+  width: 170.5px;
+  height: 170.5px;
+  left: 20px;
+  top: 280px;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+#ecosystem-dia {
+  position: absolute;
+  width: 170.5px;
+  height: 170.5px;
+  left: 360px;
+  top: 280px;
+}
+
+#pome-cyan-small {
+  position: absolute;
+  left: 190px;
+  top: 45px;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
