@@ -29,11 +29,18 @@
 
 #band {
   position: absolute;
-  width: 354px;
-  height: 271px;
-  left: 19px;
-  top: 128px;
+  top: 80px;
+  left: 15px;
+  width: 364px;
+  height: 364px;
   border-radius: 50%;
-  transform: skewX(-22deg) skewY(-9deg) scaleX(0.87) scaleY(0.75) translate3d(-5px, -6px, 0);
-  animation: spin 3s linear forwards infinite;
+  border-top: 5px solid rgba(0, 255, 255);
+  transform: rotateY(33deg) rotateX(-54deg);
+  animation: spin--1 2000ms linear infinite;
+}
+
+@keyframes spin--1 {
+  to {
+    transform: rotateY(33deg) rotateX(-54deg) rotate(360deg);
+  }
 }
