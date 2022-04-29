@@ -112,3 +112,9 @@
   height: 50vh;
   background-color: #595959;
 }
+
+#swap-header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
