@@ -41,9 +41,9 @@
         elem.style.transform = `translateY(${ratio * (-140 - 30) + 30}%)`;
 
         // 컨텐츠 효과
-        if (ratio < 0.3) {
+        if (ratio < 0.2) {
           canvas.style.opacity = 0;
-        } else if (ratio >= 0.3 && ratio < 0.7) {
+        } else if (ratio >= 0.2 && ratio < 0.7) {
           if (canvas.style.opacity == 0) {
             canvas.style.opacity = 1;
             // 이미지 그리기
