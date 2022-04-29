@@ -82,15 +82,15 @@
   background-color: #595959;
 }
 .ecosytem-arrow.gp-to-dia > .cover {
-  animation: move-1 4.5s linear forwards infinite;
+  animation: move-1 3s linear forwards infinite;
 }
 
 .ecosytem-arrow.dia-to-pmr > .cover {
-  animation: move-1 4.5s linear forwards infinite 1.5s;
+  animation: move-1 3s linear forwards infinite 1s;
 }
 
 .ecosytem-arrow.pmr-to-gp > .cover {
-  animation: move-1 4.5s linear forwards infinite 3s;
+  animation: move-1 3s linear forwards infinite 2s;
 }
 
 @keyframes move-1 {

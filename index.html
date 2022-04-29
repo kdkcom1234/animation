@@ -6,90 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Features</title>
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/top-intro.css" />
     <link rel="stylesheet" href="css/features.css" />
     <link rel="stylesheet" href="css/spaceship.css" />
     <link rel="stylesheet" href="css/planet.css" />
     <link rel="stylesheet" href="css/ecosytem.css" />
     <link rel="stylesheet" href="css/swap.css" />
+    <link rel="stylesheet" href="css/games.css" />
     <link rel="stylesheet" href="css/timeline.css" />
   </head>
   <body>
     <!-- top -->
-    <img width="100%" height="auto" src="img/top-intro.png" />
+    <div id="top-intro-wrapper">
+      <div id="top-intro">
+        <img width="100%" height="100%" src="img/top-intro.png" />
+      </div>
+    </div>
 
     <!-- features -->
-    <div id="features">
-      <div class="features-wrapper">
-        <img id="text-p2e" src="img/text-p2e.png" />
-        <div class="features-container spaceship"></div>
-      </div>
-      <div class="features-wrapper">
-        <div class="features-container planet">
-          <canvas id="pome-cyan" width="284" height="296"></canvas>
-          <div id="band"></div>
+    <div id="features-wrapper">
+      <div id="features">
+        <div class="features-container-wrapper">
+          <img id="text-p2e" src="img/text-p2e.png" />
+          <div class="features-container spaceship"></div>
         </div>
-        <img id="text-pmr" src="img/text-pmr.png" />
-      </div>
-      <div class="features-wrapper">
-        <img id="text-ecosystem" src="img/text-ecosystem.png" />
-        <div class="features-container ecosystem">
-          <canvas id="pome-cyan-small" width="171" height="178"></canvas>
+        <div class="features-container-wrapper">
+          <div class="features-container planet">
+            <canvas id="pome-cyan" width="284" height="296"></canvas>
+            <div id="band"></div>
+          </div>
+          <img id="text-pmr" src="img/text-pmr.png" />
+        </div>
+        <div class="features-container-wrapper">
+          <img id="text-ecosystem" src="img/text-ecosystem.png" />
+          <div class="features-container ecosystem">
+            <canvas id="pome-cyan-small" width="171" height="178"></canvas>
 
-          <div class="ecosytem-arrow gp-to-dia">
-            <img src="svg/arrow.svg" alt="arrow gp to dia" />
-            <div class="cover"></div>
-          </div>
-          <div class="ecosytem-arrow dia-to-pmr">
-            <img src="svg/arrow.svg" alt="arrow dia to pmr" />
-            <div class="cover"></div>
-          </div>
-          <div class="ecosytem-arrow pmr-to-gp">
-            <img src="svg/arrow.svg" alt="arrow pmr to gp" />
-            <div class="cover"></div>
+            <div class="ecosytem-arrow gp-to-dia">
+              <img src="svg/arrow.svg" alt="arrow gp to dia" />
+              <div class="cover"></div>
+            </div>
+            <div class="ecosytem-arrow dia-to-pmr">
+              <img src="svg/arrow.svg" alt="arrow dia to pmr" />
+              <div class="cover"></div>
+            </div>
+            <div class="ecosytem-arrow pmr-to-gp">
+              <img src="svg/arrow.svg" alt="arrow pmr to gp" />
+              <div class="cover"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <img width="100%" height="auto" src="img/games.png" style="margin-top: 100px" />
+    <div id="games-wrapper">
+      <div id="games">
+        <img width="100%" height="100%" src="img/games.png" />
+      </div>
+    </div>
 
-    <section class="swap-main">
-      <img src="img/swap.png" />
-    </section>
-    <section class="sticky">
-      <div class="phone">
-        <div class="notch"></div>
-        <img src="img/iphone-mock.png" width="423px" height="820px" height="auto" />
-        <div class="content-back"></div>
-        <canvas width="375" height="750"></canvas>
-      </div>
-      <div id="swap-text">
-        <div>
-          <h3>Asset</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eum numquam alias rerum asperiores
-            dignissimos, iste iure nam modi fugit quam aut recusandae deserunt omnis deleniti aliquam temporibus ducimus
-            eius adipisci impedit, odio aliquid sed?
-          </p>
+    <div id="swap-wrapper">
+      <section id="swap-main">
+        <img src="img/swap.png" />
+      </section>
+      <section id="swap-sticky">
+        <div id="phone">
+          <div id="notch"></div>
+          <img src="img/iphone-mock.png" width="423px" height="820px" height="auto" />
+          <div id="content-back"></div>
+          <canvas width="375" height="750"></canvas>
         </div>
-        <div>
-          <h3>Swap</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eum numquam alias rerum asperiores
-            dignissimos, iste iure nam modi fugit quam aut recusandae deserunt omnis deleniti aliquam temporibus ducimus
-            eius adipisci impedit, odio aliquid sed?
-          </p>
+        <div id="swap-text">
+          <div>
+            <h3>Asset</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eum numquam alias rerum asperiores
+              dignissimos, iste iure nam modi fugit quam aut recusandae deserunt omnis deleniti aliquam temporibus
+              ducimus eius adipisci impedit, odio aliquid sed?
+            </p>
+          </div>
+          <div>
+            <h3>Swap</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eum numquam alias rerum asperiores
+              dignissimos, iste iure nam modi fugit quam aut recusandae deserunt omnis deleniti aliquam temporibus
+              ducimus eius adipisci impedit, odio aliquid sed?
+            </p>
+          </div>
+          <div>
+            <h3>Witdraw</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eum numquam alias rerum asperiores
+              dignissimos, iste iure nam modi fugit quam aut recusandae deserunt omnis deleniti aliquam temporibus
+              ducimus eius adipisci impedit, odio aliquid sed?
+            </p>
+          </div>
         </div>
-        <div>
-          <h3>Witdraw</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eum numquam alias rerum asperiores
-            dignissimos, iste iure nam modi fugit quam aut recusandae deserunt omnis deleniti aliquam temporibus ducimus
-            eius adipisci impedit, odio aliquid sed?
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <div id="between"></div>
     <div class="content-roadmap">
       <div class="roadmap">
         <header>
@@ -148,11 +163,13 @@
 
     <img id="bottom" src="img/bottom.png" width="100%" height="auto" />
 
+    <script src="js/top-intro.js"></script>
     <script src="js/drawLines.js"></script>
     <script src="js/spaceship.js"></script>
     <script src="js/planet.js"></script>
     <script src="js/ecosytem.js"></script>
     <script src="js/swap.js"></script>
+    <script src="js/games.js"></script>
     <script src="js/timeline.js"></script>
   </body>
 </html>

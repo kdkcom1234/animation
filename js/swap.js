@@ -1,8 +1,8 @@
 (function () {
-  const section = document.querySelector('.sticky');
-  const main = document.querySelector('.swap-main');
-  const canvas = document.querySelector('.phone > canvas');
-  const context = document.querySelector('.phone > canvas').getContext('2d');
+  const section = document.querySelector('#swap-sticky');
+  const main = document.querySelector('#swap-main');
+  const canvas = document.querySelector('#phone canvas');
+  const context = document.querySelector('#phone canvas').getContext('2d');
 
   const setAnimation = () => {
     // console.log(main.offsetTop);
@@ -21,12 +21,9 @@
 
     for (let index of [0, 1, 2]) {
       if (yOffset >= subHeight * index && yOffset <= subHeight * (index + 1)) {
-        // 텍스트 효과
-        const elem = document.querySelector(`#swap-text > div:nth-child(${index + 1})`);
-
         const ratio = (yOffset - subHeight * index) / subHeight;
-        // console.log(ratio);
 
+        // 텍스트 효과
         let opacity = 0;
         if (ratio < 0.2) {
           opacity = ratio * 5;
@@ -35,24 +32,27 @@
         } else if (ratio >= 0.8) {
           opacity = 1 - ratio;
         }
-        elem.style.opacity = opacity;
-        elem.style.transform = `translateY(${ratio * -190 + 50}%)`;
 
-        if (ratio < 0.1) {
+        const elem = document.querySelector(`#swap-text > div:nth-child(${index + 1})`);
+        elem.style.opacity = opacity;
+        elem.style.transform = `translateY(${ratio * (-140 - 30) + 30}%)`;
+
+        // 컨텐츠 효과
+        if (ratio < 0.3) {
           canvas.style.opacity = 0;
-        } else if (ratio >= 0.1 && ratio < 0.9) {
+        } else if (ratio >= 0.3 && ratio < 0.7) {
           if (canvas.style.opacity == 0) {
+            canvas.style.opacity = 1;
             // 이미지 그리기
             const img = new Image();
             img.src = `img/app${index}.png`;
             img.onload = () => {
+              // bufferedContext.drawImage(img, 0, 0, 375, 750);
               context.drawImage(img, 0, 0, 375, 750);
             };
-            canvas.style.opacity = 1;
           }
-        } else if (ratio >= 0.9) {
+        } else if (ratio >= 0.7) {
           if (canvas.style.opacity == 1) {
-            context.clearRect(0, 0, 375, 750);
             canvas.style.opacity = 0;
           }
         }

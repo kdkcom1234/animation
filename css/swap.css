@@ -1,33 +1,76 @@
-.swap-main {
+#swap-wrapper {
+  background-color: #595959;
+  width: 100%;
+  height: 100%;
+}
+#swap-main {
   position: relative;
-  height: 5vh;
+  height: 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   opacity: 0;
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
-.swap-main > img {
+#swap-main > img {
   height: 80vh;
 }
 
-.sticky {
+#swap-sticky {
   height: calc(100vh * 3);
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 50vh;
   opacity: 0;
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
-.sticky > div {
-  width: 50%;
+#swap-sticky > div {
+  width: 600px;
   display: flex;
   align-items: center;
   position: fixed;
   top: 20px;
   height: 100vh;
+}
+
+#phone {
+  position: relative;
+  width: 50%;
+  transform: scale(0.8);
+}
+
+#phone #notch {
+  position: absolute;
+  top: calc(50% - 402px);
+  left: 2px;
+  background-color: #13131b;
+  height: 37px;
+  width: 372px;
+}
+
+#phone img {
+  position: absolute;
+  top: calc(50% - 423px);
+  left: -24px;
+  z-index: 2;
+}
+
+#phone #content-back {
+  position: absolute;
+  top: calc(50% - 370px);
+  left: 0;
+  background-color: #1c1c26;
+  width: 375px;
+  height: 750px;
+}
+
+#phone canvas {
+  position: absolute;
+  top: calc(50% - 370px);
+  left: 0;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
 }
 
 #swap-text {
@@ -61,39 +104,8 @@
   color: #fff;
 }
 
-.phone {
-  position: relative;
-}
-
-.phone .notch {
-  position: absolute;
-  top: calc(50% - 402px);
-  left: 2px;
-  background-color: #13131b;
-  height: 37px;
-  width: 372px;
-}
-
-.phone img {
-  position: absolute;
-  top: calc(50% - 423px);
-  left: -24px;
-  z-index: 2;
-}
-
-.phone .content-back {
-  position: absolute;
-  top: calc(50% - 370px);
-  left: 0;
-  background-color: #1c1c26;
-  width: 375px;
-  height: 750px;
-}
-
-.phone canvas {
-  position: absolute;
-  top: calc(50% - 370px);
-  left: 0;
-  opacity: 0;
-  transition: opacity 300ms ease-in-out 300ms;
+#between {
+  width: 100%;
+  height: 50vh;
+  background-color: #595959;
 }
