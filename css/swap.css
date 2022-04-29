@@ -5,7 +5,8 @@
 }
 #swap-main {
   position: relative;
-  height: 0;
+  /* height: 100vh; */
+  height: 0vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -18,6 +19,7 @@
 }
 
 #swap-sticky {
+  /* display: none; */
   height: calc(100vh * 3);
   width: 1200px;
   margin: 0 auto;
@@ -70,7 +72,7 @@
   top: calc(50% - 370px);
   left: 0;
   opacity: 1;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
 }
 
 #swap-text {
@@ -105,6 +107,7 @@
 }
 
 #between {
+  /* display: none; */
   width: 100%;
   height: 50vh;
   background-color: #595959;
