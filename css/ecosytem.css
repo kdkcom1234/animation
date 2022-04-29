@@ -22,7 +22,7 @@
   position: absolute;
   width: 170.5px;
   height: 170.5px;
-  left: 20px;
+  left: 25px;
   top: 280px;
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
@@ -82,15 +82,15 @@
   background-color: #595959;
 }
 .ecosytem-arrow.gp-to-dia > .cover {
-  animation: move-1 3s cubic-bezier(0.19, 0.43, 0.83, 0.6) forwards infinite;
+  animation: move-1 4.5s linear forwards infinite;
 }
 
 .ecosytem-arrow.dia-to-pmr > .cover {
-  animation: move-1 3s cubic-bezier(0.19, 0.43, 0.83, 0.6) forwards infinite 1s;
+  animation: move-1 4.5s linear forwards infinite 1.5s;
 }
 
 .ecosytem-arrow.pmr-to-gp > .cover {
-  animation: move-1 3s cubic-bezier(0.19, 0.43, 0.83, 0.6) forwards infinite 2s;
+  animation: move-1 4.5s linear forwards infinite 3s;
 }
 
 @keyframes move-1 {

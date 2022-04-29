@@ -4,7 +4,7 @@ body {
 
 #features {
   width: 100%;
-  max-width: 1440px;
+  max-width: 877px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -14,15 +14,23 @@ body {
 }
 
 .features-wrapper {
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
 }
 
 .features-container {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 445px;
+  height: 550px;
+}
+
+.features-container:nth-last-child(2n-1) {
+  margin-left: 25px;
+}
+
+.features-container:nth-last-child(2n) {
+  margin-right: 25px;
 }
 
 @keyframes draw {
