@@ -216,6 +216,10 @@
 }
 
 /* ---- added rules for animation --- */
+.content-roadmap {
+  overflow: hidden;
+}
+
 .timeline .container {
   opacity: 0;
   /* transition: all 1s ease-in-out; */
@@ -229,6 +233,3 @@
 .timeline .container.right {
   transform: translateX(250px);
 }
-
-/* .content-roadmap {
-} */
