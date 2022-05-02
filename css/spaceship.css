@@ -8,7 +8,7 @@
   height: 415px;
   left: 0;
   top: 0;
-  animation: move 1.5s ease-in-out alternate infinite;
+  animation: move-left-top 1.5s ease-in-out alternate infinite;
 }
 
 #fire {
@@ -37,7 +37,7 @@
   }
 }
 
-@keyframes move {
+@keyframes move-left-top {
   from {
     transform: translate3d(1px, 1px, 0);
   }

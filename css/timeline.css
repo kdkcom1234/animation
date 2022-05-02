@@ -218,18 +218,69 @@
 /* ---- added rules for animation --- */
 .content-roadmap {
   overflow: hidden;
+  height: 2050px;
+  padding-top: 100p;
 }
 
 .timeline .container {
-  opacity: 0;
-  /* transition: all 1s ease-in-out; */
-  transition: all 750ms cubic-bezier(0.42, 0, 0.79, 1.23);
+  margin-bottom: 100px;
 }
 
-.timeline .container.left {
+/* 텍스트 컨텐트, 이미지 */
+.timeline .container > .content,
+.timeline .container > .imagebox {
+  opacity: 0;
+  transition: all 1000ms ease-in-out;
+}
+
+.timeline .container.left > .content,
+.timeline .container.left > .imagebox {
   transform: translateX(-250px);
 }
 
-.timeline .container.right {
+.timeline .container.right > .content,
+.timeline .container.right > .imagebox {
   transform: translateX(250px);
+}
+
+.timeline .container.left.fade-in > .content,
+.timeline .container.left.fade-in > .imagebox,
+.timeline .container.right.fade-in > .content,
+.timeline .container.right.fade-in > .imagebox {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* 점선 */
+.timeline .container::before {
+  opacity: 0;
+  transition: all 1200ms ease-in-out;
+}
+
+.timeline .container.left::before {
+  transform-origin: left;
+  transform: translateX(-80px) scaleX(0);
+}
+
+.timeline .container.right::before {
+  transform-origin: right;
+  transform: translateX(80px) scaleX(0);
+}
+
+.timeline .container.left.fade-in::before,
+.timeline .container.right.fade-in::before {
+  opacity: 1;
+  transform: translateX(0px) scaleX(1);
+}
+
+/* 원 */
+.timeline .container::after {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 1200ms ease-in-out;
+}
+
+.timeline .container.fade-in::after {
+  opacity: 1;
+  transform: scale(1);
 }

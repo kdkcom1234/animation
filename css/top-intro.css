@@ -6,6 +6,7 @@
   height: 100%;
   z-index: -1;
   background-color: #595959;
+  /* background-color: rgb(16, 4, 24); */
 }
 #top-intro {
   position: sticky;

@@ -36,10 +36,10 @@
   border-radius: 50%;
   border-top: 5px solid rgba(0, 255, 255);
   transform: rotateY(33deg) rotateX(-54deg);
-  animation: spin--1 2000ms linear infinite;
+  animation: spin 2000ms linear infinite;
 }
 
-@keyframes spin--1 {
+@keyframes spin {
   to {
     transform: rotateY(33deg) rotateX(-54deg) rotate(360deg);
   }
