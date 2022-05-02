@@ -259,12 +259,12 @@
 
 .timeline .container.left::before {
   transform-origin: left;
-  transform: translateX(-80px) scaleX(0);
+  transform: translateX(-125px) scaleX(0);
 }
 
 .timeline .container.right::before {
   transform-origin: right;
-  transform: translateX(80px) scaleX(0);
+  transform: translateX(125px) scaleX(0);
 }
 
 .timeline .container.left.fade-in::before,
