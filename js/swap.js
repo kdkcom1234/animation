@@ -39,11 +39,11 @@
         const elem = document.querySelector(`#swap-text > div:nth-child(${index + 1})`);
         elem.style.opacity = opacity;
         elem.style.transform = `translateY(${ratio * (-140 - 30) + 30}%)`;
-
+        console.log(ratio);
         // 컨텐츠 효과
-        if (ratio < 0.2) {
+        if (ratio < 0.1) {
           canvas.style.opacity = 0;
-        } else if (ratio >= 0.2 && ratio < 0.7) {
+        } else if (ratio >= 0.1 && ratio < 0.7) {
           if (canvas.style.opacity == 0) {
             canvas.style.opacity = 1;
             // 이미지 그리기
