@@ -23,11 +23,12 @@
 
 #swap-sticky {
   /* display: none; */
-  height: calc(100vh * 2);
+  /* scroll height */
+  height: 200vh;
   width: 1200px;
   margin: 0 auto;
   opacity: 0;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
 }
 
 #swap-sticky > div {
