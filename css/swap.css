@@ -49,7 +49,7 @@
 #swap-phone #notch {
   position: absolute;
   top: calc(50% - 402px);
-  left: 2px;
+  left: 105px;
   background-color: #13131b;
   height: 37px;
   width: 372px;
@@ -58,14 +58,14 @@
 #swap-phone img {
   position: absolute;
   top: calc(50% - 423px);
-  left: -24px;
+  left: 82px;
   z-index: 2;
 }
 
 #swap-phone #content-back {
   position: absolute;
   top: calc(50% - 370px);
-  left: 0;
+  left: 105px;
   background-color: #1c1c26;
   width: 375px;
   height: 750px;
@@ -74,7 +74,7 @@
 #swap-phone canvas {
   position: absolute;
   top: calc(50% - 370px);
-  left: 0;
+  left: 105px;
   opacity: 1;
   transition: opacity 400ms ease-in-out;
 }
@@ -92,19 +92,20 @@
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  width: 30vw;
+  /* width: 30vw; */
   opacity: 0;
   text-align: center;
   transition: opacity 150ms ease-in-out;
 }
 #swap-text h3 {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   color: #ffb800;
   margin-bottom: 32px;
 }
 
 #swap-text p {
+  width: 600px;
   font-weight: 400;
   font-size: 32px;
   color: #fff;
