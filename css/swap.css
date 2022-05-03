@@ -6,16 +6,19 @@
 #swap-main {
   position: relative;
   /* height: 100vh; */
-  height: 0vh;
+  height: 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 }
-
-#swap-main > img {
-  height: 80vh;
+#swap-image-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #swap-sticky {
