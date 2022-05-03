@@ -45,6 +45,6 @@
   window.addEventListener('scroll', fadeOutAndZoomOut);
   window.addEventListener('resize', fadeOutAndZoomOut);
 
-  const observer = new IntersectionObserver(play, { threshold: 0.33 });
+  const observer = new IntersectionObserver(play, { threshold: 0.2 });
   observer.observe(games);
 })();
