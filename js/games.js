@@ -12,7 +12,7 @@
 
     const offset = scrollY - (topHeight + featuresHeight);
     const ratio = offset / gamesHeight;
-    // const ratio = (offset - gamesHeight / 3) / (gamesHeight / 3);
+    // const ratio = (offset - gamesHeight / 2) / (gamesHeight / 2);
 
     //fade - out;
     if (ratio >= 0 && ratio <= 1) {
