@@ -1,8 +1,8 @@
 (function () {
   const section = document.querySelector('#swap-sticky');
   const main = document.querySelector('#swap-main');
-  const canvas = document.querySelector('#phone canvas');
-  const context = document.querySelector('#phone canvas').getContext('2d');
+  const canvas = document.querySelector('#swap-phone canvas');
+  const context = document.querySelector('#swap-phone canvas').getContext('2d');
   const header = document.querySelector('#swap-header');
 
   const setAnimation = () => {

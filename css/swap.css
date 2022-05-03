@@ -36,13 +36,13 @@
   height: 100vh;
 }
 
-#phone {
+#swap-phone {
   position: relative;
   width: 50%;
   transform: scale(0.8);
 }
 
-#phone #notch {
+#swap-phone #notch {
   position: absolute;
   top: calc(50% - 402px);
   left: 2px;
@@ -51,14 +51,14 @@
   width: 372px;
 }
 
-#phone img {
+#swap-phone img {
   position: absolute;
   top: calc(50% - 423px);
   left: -24px;
   z-index: 2;
 }
 
-#phone #content-back {
+#swap-phone #content-back {
   position: absolute;
   top: calc(50% - 370px);
   left: 0;
@@ -67,7 +67,7 @@
   height: 750px;
 }
 
-#phone canvas {
+#swap-phone canvas {
   position: absolute;
   top: calc(50% - 370px);
   left: 0;
