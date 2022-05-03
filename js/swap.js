@@ -3,7 +3,7 @@
   const main = document.querySelector('#swap-main');
   const canvas = document.querySelector('#swap-phone canvas');
   const context = document.querySelector('#swap-phone canvas').getContext('2d');
-  const header = document.querySelector('#swap-header');
+  // const header = document.querySelector('#swap-header');
 
   const setAnimation = () => {
     // console.log(main.offsetTop);
@@ -15,11 +15,11 @@
     if (yOffset >= 0 && yOffset < sectionHeight) {
       main.style.opacity = 0;
       section.style.opacity = 1;
-      header.style.display = 'block';
+      // header.style.display = 'block';
     } else {
       main.style.opacity = 1;
       section.style.opacity = 0;
-      header.style.display = 'none';
+      // header.style.display = 'none';
     }
 
     for (let index of [0, 1, 2]) {
