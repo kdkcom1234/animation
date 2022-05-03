@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Features</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/top-intro.css" />
     <link rel="stylesheet" href="css/features.css" />
     <link rel="stylesheet" href="css/spaceship.css" />
     <link rel="stylesheet" href="css/planet.css" />
@@ -17,12 +16,9 @@
   </head>
   <body>
     <!-- top -->
-    <div id="top-intro-wrapper">
-      <div id="top-intro">
-        <img width="100%" height="100%" src="img/top-intro.png" />
-      </div>
+    <div style="height: 100vh;">
+      <img width="100%" height="100%" src="img/top-intro.png" />
     </div>
-
     <!-- features -->
     <div id="features-wrapper">
       <div id="features">
@@ -60,70 +56,30 @@
     </div>
 
     <div id="games-wrapper">
-      <div id="games">
-        <div id="games-opacity-layer">
-          <div id="games-content">
-            <h2>Games</h2>
-            <div id="games-phone-wrapper">
-              <div id="games-phone">
-                <div id="games-video-wrapper">
-                  <video id="game-video" width="auto" height="354px" muted loop >
-                    <source src="vid/pomerium-teaser.mp4" type="video/mp4">
-                  </video> 
-                </div>
-                <img src="img/frame.png" width="auto" height="425px" />                 
+      <div id="games-opacity-layer">
+        <div id="games-content">
+          <h2>Games</h2>
+          <div id="games-phone-wrapper">
+            <div id="games-phone">
+              <div id="games-video-wrapper">
+                <video id="game-video" width="auto" height="345px" muted loop >
+                  <source src="vid/pomerium-teaser.mp4" type="video/mp4">
+                </video> 
               </div>
+              <img src="img/frame.png" width="auto" height="415px" />                 
             </div>
-            <h3>1st.Pome Run</h3>
-            <p>Based on the reongeim pome run is optimized for mobile devices to market. Tesla and Elon the meme for Musk is element that are covered in the game.</p>
-            <div id="games-store">
-              <img src="img/google.png">
-              <img src="img/apple.png">
-            </div>
+          </div>
+          <h3>1st.Pome Run</h3>
+          <p>Based on the reongeim pome run is optimized for mobile devices to market. Tesla and Elon the meme for Musk is element that are covered in the game.</p>
+          <div id="games-store">
+            <img src="img/google.png">
+            <img src="img/apple.png">
           </div>
         </div>
       </div>
     </div>
     <div id="swap-wrapper">
-      <section id="swap-main">
-        <div id="swap-image-wrapper">
-          <img src="img/swap.png" height="752px" width="auto" />
-        </div>
-      </section>
-      <!-- <header id="swap-header"><img src="img/swap-header.png" width="100%" height="auto" /></header> -->
-      <section id="swap-sticky">
-        <div id="swap-phone">
-          <div id="notch"></div>
-          <img src="img/iphone-mock.png" width="423px" height="820px" height="auto" />
-          <div id="content-back"></div>
-          <canvas width="375" height="750"></canvas>
-        </div>
-        <div id="swap-text">
-          <div>
-            <h3>Asset</h3>
-            <p>
-              Crypto assets are purely digital assets that use public ledgers over the internet to prove ownership. They
-              use cryptography, peer-to-peer networks and a distributed ledger technology (DLT) to create, verify and
-              secure transactions.
-            </p>
-          </div>
-          <div>
-            <h3>Swap</h3>
-            <p>
-              Decentralized exchanges of today do not employ order books to facilitate transactions or determine prices
-              for crypto assets anymore. To price assets, this framework, on the other hand, uses a liquidity pool
-              protocol.
-            </p>
-          </div>
-          <div>
-            <h3>Witdraw</h3>
-            <p>
-              A crypto withdrawal is a transaction that allows you to move your cryptocurrency balance off the Revolut
-              platform to an external crypto wallet that you control such as a Ledger or a Trezor.
-            </p>
-          </div>
-        </div>
-      </section>
+      <img src="img/swap.png" height="752px" width="auto" />
     </div>
     <div id="between"></div>
     <div class="content-roadmap">
@@ -234,13 +190,11 @@
     </div>
 
     <img id="bottom" src="img/bottom.png" width="100%" height="auto" />
-
-    <script src="js/top-intro.js"></script>
+>
     <script src="js/drawLines.js"></script>
     <script src="js/spaceship.js"></script>
     <script src="js/planet.js"></script>
     <script src="js/ecosytem.js"></script>
-    <script src="js/swap.js"></script>
     <script src="js/games.js"></script>
     <script src="js/timeline.js"></script>
   </body>
