@@ -40,16 +40,16 @@
 
 #games-phone {
   position: absolute;
-  height: 310px;
+  height: 302px;
   width: 640px;
-  top: calc(100vh / 2 - 310px / 2);
+  top: calc(100vh / 2 - 302px / 2);
   left: calc(100% / 2 - 650px / 2);
 }
 
 #games-video-wrapper {
   position: absolute;
   overflow: hidden;
-  border-radius: 69px;
+  border-radius: 33px;
   height: 100%;
   width: 100%;
   top: 0;
@@ -57,23 +57,14 @@
   background-color: none;
 }
 
-#games-phone > img {
+#games-phone img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0px) rotate(-90deg);
+  transform: translate3d(-50%, calc(-50% + 9px), 0px);
 }
-#games-phone > video {
+#games-phone video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0px);
-}
-
-#games-phone video[poster] {
-  position: absolute;
-  height: 130%;
-  width: 130%;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0px);
